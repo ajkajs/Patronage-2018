@@ -1,0 +1,25 @@
+.moviesCounter {
+	font-weight: 600;
+}
+
+.moviesListContainer {
+	margin-top: 100px;
+}
+
+.moviesCountersContainer {
+	text-align: right;
+	margin: 0 10px 0 0;
+}
+
+.moviesList {
+    width: 800px;
+    margin: auto;
+}
+
+.moviesList li {
+	margin: 10px 0 0 0;
+}
+
+.moviesList li:hover {
+	text-decoration: underline;
+}
