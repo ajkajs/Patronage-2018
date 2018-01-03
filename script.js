@@ -11,13 +11,14 @@
 
 	function updateSeen (seen, e) {
 		document.getElementById("seen_" + e.currentTarget.id).textContent=", seen: " + seen;
-		movieData = moviesData.map((movie) => {
+		moviesData.map((movie) => {
 			if (parseInt(e.currentTarget.id) === movie.id) {
 				movie.seen = seen;
 			}
 			return movie;
 		});
 	}
+
 
 	function markSeen (e) {
 		if (e.currentTarget.checked) {
@@ -70,8 +71,3 @@
 	document.getElementById("moviesListContainer").setAttribute("class", "moviesListContainer");
 	document.getElementById("moviesList").setAttribute("class", "moviesList");
 })();
-
-
-
-
-
